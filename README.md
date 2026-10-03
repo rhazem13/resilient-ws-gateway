@@ -1,5 +1,7 @@
 # Resilient WebSocket Gateway
 
+[![Verify gateway](https://github.com/rhazem13/resilient-ws-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/rhazem13/resilient-ws-gateway/actions/workflows/ci.yml)
+
 Two Node.js/TypeScript gateways share session state in Redis so a client can reconnect on another instance and replay available events after a process dies.
 
 ## The problem
