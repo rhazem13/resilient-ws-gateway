@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "date": "2026-10-03T14:27:19.089Z",
+    "host": "win32",
+    "cpu": "AMD Ryzen 7 5800H with Radeon Graphics         ",
+    "hostLogicalCpus": 16,
+    "hostMemoryGiB": 31.4,
+    "clientNode": "v24.1.0",
+    "gatewayNode": "v24.21.0",
+    "docker": "28.3.0",
+    "dockerResources": "4 CPUs / 8331214848 bytes"
+  },
+  "results": [
+    {
+      "clients": 10,
+      "delivered": 150,
+      "expected": 150,
+      "errors": 0,
+      "elapsedSeconds": 14.05,
+      "eventsPerSecond": 10.67,
+      "p50Ms": 27,
+      "p95Ms": 50,
+      "p99Ms": 53,
+      "recoveryP95Ms": 1746.91,
+      "recovered": 10,
+      "gatewayLagP99Ms": [
+        10.559486999999999,
+        10.739711000000002
+      ]
+    },
+    {
+      "clients": 50,
+      "delivered": 750,
+      "expected": 750,
+      "errors": 0,
+      "elapsedSeconds": 14.07,
+      "eventsPerSecond": 53.31,
+      "p50Ms": 44,
+      "p95Ms": 72,
+      "p99Ms": 81,
+      "recoveryP95Ms": 1806.5,
+      "recovered": 50,
+      "gatewayLagP99Ms": [
+        10.616831,
+        11.001854999999999
+      ]
+    },
+    {
+      "clients": 100,
+      "delivered": 1500,
+      "expected": 1500,
+      "errors": 0,
+      "elapsedSeconds": 14.14,
+      "eventsPerSecond": 106.1,
+      "p50Ms": 55,
+      "p95Ms": 80,
+      "p99Ms": 99,
+      "recoveryP95Ms": 1937.29,
+      "recovered": 100,
+      "gatewayLagP99Ms": [
+        11.444223,
+        11.067390999999999
+      ]
+    },
+    {
+      "clients": 250,
+      "delivered": 3750,
+      "expected": 3750,
+      "errors": 0,
+      "elapsedSeconds": 14.27,
+      "eventsPerSecond": 262.74,
+      "p50Ms": 104,
+      "p95Ms": 155,
+      "p99Ms": 194,
+      "recoveryP95Ms": 2337.22,
+      "recovered": 250,
+      "gatewayLagP99Ms": [
+        13.967359,
+        12.763135
+      ]
+    }
+  ]
+}

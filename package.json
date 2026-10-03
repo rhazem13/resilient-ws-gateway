@@ -1,0 +1,34 @@
+{
+  "name": "resilient-ws-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --test --import tsx tests/unit.test.ts",
+    "test:integration": "node --test --import tsx tests/integration.test.ts",
+    "stack:up": "node scripts/stack.mjs up",
+    "stack:down": "node scripts/stack.mjs down",
+    "demo:failover": "node --import tsx scripts/failover.ts",
+    "load": "node --import tsx scripts/load.ts"
+  },
+  "dependencies": {
+    "@prometheus-io/client": "^0.16.1",
+    "fastify": "^5.12.5",
+    "ioredis": "^6.0.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/ws": "^8.18.2",
+    "eslint": "^10.12.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0"
+  }
+}
